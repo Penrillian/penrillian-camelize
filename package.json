@@ -1,5 +1,5 @@
 {
-  "name": "camelize",
+  "name": "penrillian-camelize",
   "version": "1.0.0",
   "description": "recursively transform key strings to camel-case",
   "main": "index.js",
@@ -11,42 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/substack/camelize.git"
+    "url": "git://github.com/Penrillian/penrillian-camelize.git"
   },
-  "homepage": "https://github.com/substack/camelize",
+  "homepage": "https://github.com/Penrillian/penrillian-camelize",
   "keywords": [
     "camel-case",
     "json",
     "transform"
   ],
-  "testling": {
-    "files": "test/*.js",
-    "browsers": {
-      "iexplore": [
-        "6.0",
-        "7.0",
-        "8.0",
-        "9.0"
-      ],
-      "chrome": [
-        "20.0"
-      ],
-      "firefox": [
-        "10.0",
-        "15.0"
-      ],
-      "safari": [
-        "5.1"
-      ],
-      "opera": [
-        "12.0"
-      ]
-    }
-  },
   "author": {
-    "name": "James Halliday",
-    "email": "mail@substack.net",
-    "url": "http://substack.net"
+    "name": "Penrillian",
+    "email": "enquiries@penrillian.com",
+    "url": "http://penrillian.com"
   },
   "license": "MIT",
   "dependencies": {
