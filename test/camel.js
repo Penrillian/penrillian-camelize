@@ -4,6 +4,7 @@ var camelize = require('../');
 var obj = {
     fee_fie_foe: 'fum',
     beep_boop: [
+        { 'KeyID': 'mno' },
         { 'abc.xyz': 'mno' },
         { 'foo-bar': 'baz' }
     ]
@@ -15,6 +16,7 @@ test('camelize a nested object', function (t) {
     t.deepEqual(res, {
         "feeFieFoe": "fum",
         "beepBoop": [
+            { "keyId": "mno" },
             { "abcXyz": "mno" },
             { "fooBar": "baz" }
         ]
