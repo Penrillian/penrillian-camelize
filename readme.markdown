@@ -1,10 +1,6 @@
-# camelize
+# penrillian-camelize
 
-recursively transform key strings to camel-case
-
-[![build status](https://secure.travis-ci.org/substack/camelize.png)](http://travis-ci.org/substack/camelize)
-
-[![browser support](https://ci.testling.com/substack/camelize.png)](http://ci.testling.com/substack/camelize)
+Recursively transform key strings to camel-case.
 
 # example
 
@@ -13,6 +9,7 @@ var camelize = require('camelize');
 var obj = {
     fee_fie_foe: 'fum',
     beep_boop: [
+        { "KeyID": "abc" },
         { 'abc.xyz': 'mno' },
         { 'foo-bar': 'baz' }
     ]
@@ -28,6 +25,9 @@ output:
   "feeFieFoe": "fum",
   "beepBoop": [
     {
+      "keyId": "abc"
+    },
+    {
       "abcXyz": "mno"
     },
     {
@@ -40,7 +40,7 @@ output:
 # methods
 
 ``` js
-var camelize = require('camelize')
+var penrillianCamelize = require('penrillian-camelize')
 ```
 
 ## camelize(obj)
@@ -52,7 +52,7 @@ Convert the key strings in `obj` to camel-case recursively.
 With [npm](https://npmjs.org) do:
 
 ```
-npm install camelize
+npm install penrillian-camelize
 ```
 
 To use in the browser, use [browserify](http://browserify.org).
